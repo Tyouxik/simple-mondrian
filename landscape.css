@@ -1,0 +1,198 @@
+.frame {
+  display: grid;
+  grid-template-columns:
+    [start] 1fr 0.25fr 1fr 0.5fr 0.5fr
+    [section2] repeat(4, 1fr)
+    [section3] 0.5fr 0.5fr 1fr 0.25fr 1fr [end];
+  grid-template-rows: [start] repeat(10, 1fr) [end];
+  grid-gap: 5px;
+}
+
+/* Section 1: boxes from 1 to 14 */
+/* Columns from grid line 1 (start) to 6 (section2) */
+/* Rows from grid line 1 to 11 */
+
+.box-1 {
+  grid-area: start / start / 2 / 3;
+}
+.box-2 {
+  grid-area: start / 3 / 2 / section2;
+}
+
+.box-3 {
+  grid-area: 2 / start / 4;
+}
+
+.box-4 {
+  grid-area: 2 / 2 / 6 / section2;
+}
+
+.box-5 {
+  grid-area: 4 / start / 7;
+}
+
+.box-6 {
+  grid-area: 7 / start / 10;
+}
+
+.box-7 {
+  grid-area: 6 / 2 / 8 / 4;
+}
+
+.box-8 {
+  grid-area: 8 / 2 / 10 / 4;
+}
+
+.box-9 {
+  grid-area: 6 / 4 / 7 / section2;
+}
+
+.box-10 {
+  grid-area: 7 / 4 / 8 / section2;
+}
+
+.box-11 {
+  grid-area: 8 / 4 / 9 / section2;
+}
+
+.box-12 {
+  grid-area: 10 / start / 11 / 4;
+}
+
+.box-13 {
+  grid-area: 9 / 4 / 11;
+}
+
+.box-14 {
+  grid-area: 9 / 5 / 11;
+}
+
+/* Section 2: boxes from 15 to 29 */
+/* Columns from grid line 6 (section2) to 10 (section3) */
+/* Rows from grid line 1 to 11 */
+
+.box-15 {
+  grid-area: start / section2 / 2 / 8;
+}
+
+.box-16 {
+  grid-area: 2 / section2 / 4 / 8;
+}
+
+.box-17 {
+  grid-area: 4 / section2 / 6;
+}
+
+.box-18 {
+  grid-area: 4 / 7 / 6;
+}
+
+.box-19 {
+  grid-area: 6 / section2 / 7 / 8;
+}
+
+.box-20 {
+  grid-area: 7 / section2 / 9 / 8;
+}
+
+.box-21 {
+  grid-area: 9 / section2 / 11 / 8;
+}
+
+.box-22 {
+  grid-area: 1 / 8 / 3 / section3;
+}
+
+.box-23 {
+  grid-area: 3 / 8 / 5 / section3;
+}
+
+.box-24 {
+  grid-area: 5 / 8 / 6 / section3;
+}
+
+.box-25 {
+  grid-area: 6 / 8 / 8 / 9;
+}
+
+.box-26 {
+  grid-area: 6 / 9 / 8;
+}
+
+.box-27 {
+  grid-area: 8 / 8 / 10 / section3;
+}
+
+.box-28 {
+  grid-area: 10 / 8;
+}
+
+.box-29 {
+  grid-area: 10 / 9;
+}
+
+/* Section 2: boxes from 15 to 29 */
+/* Columns from grid line 10 (section3) to 15 (end) */
+/* Rows from grid line 1 to 11 */
+
+/* Box-30 and box-31 are optional as they are automatically positioned correctly */
+
+.box-30 {
+  grid-area: start / section3;
+}
+
+.box-31 {
+  grid-area: start / 11;
+}
+
+.box-32 {
+  grid-area: 2 / section3 / 3 / 12;
+}
+
+.box-33 {
+  grid-area: 3 / section3 / 4 / 12;
+}
+
+.box-34 {
+  grid-area: 4 / section3 / 5 / 12;
+}
+
+.box-35 {
+  grid-area: 5 / section3 / 6 / 12;
+}
+
+.box-36 {
+  grid-area: 6 / section3 / 10 / 14;
+}
+
+.box-37 {
+  grid-area: 10 / section3 / 11 / 13;
+}
+
+.box-38 {
+  grid-area: start / 12 / 2 / end;
+}
+
+.box-39 {
+  grid-area: 2 / 12 / 4 / 14;
+}
+
+.box-40 {
+  grid-area: 4 / 12 / 6 / 14;
+}
+
+.box-41 {
+  grid-area: 2 / 14 / 5;
+}
+
+.box-42 {
+  grid-area: 5 / 14 / 8;
+}
+
+.box-43 {
+  grid-area: 8 / 14 / 10;
+}
+
+.box-44 {
+  grid-area: 10 / 13 / end / end;
+}
