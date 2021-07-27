@@ -63,3 +63,7 @@ S2 and S3 refers to the beginning of Section 2 and Section 3.
 ## Final result
 
 You can enjoy the result of this code [here](https://tyouxik.github.io/simple-mondrian/).
+
+## Additional features
+
+Some boxes have secrets. Click on them and discover them.
